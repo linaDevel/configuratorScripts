@@ -1,10 +1,10 @@
 #!/bin/bash
 
-BASE_URL="https://raw.githubusercontent.com/linaDevel/usefullScripts/master"
+BASE_URL="https://raw.githubusercontent.com/linaDevel/configuratorScripts/master"
 TMPDIR=$(mktemp -d)
 pushd ${TMPDIR}
 
-wget -O common.sh "${BASE_URL}/configurator/common.sh" 2> /dev/null
+wget -O common.sh "${BASE_URL}/common.sh" 2> /dev/null
 source "${TMPDIR}/common.sh"
 
 setup_requirements
